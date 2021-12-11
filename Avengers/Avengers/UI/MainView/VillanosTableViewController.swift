@@ -14,6 +14,15 @@ class VillanosTableViewController: UIViewController{
     private var villanos = Villanos()
     private let villanosRepository = VillanoRepository()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.villanos.removeAll()
+        DispatchQueue.main.async {
+                self.tableView?.reloadData()
+            }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
