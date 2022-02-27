@@ -14,14 +14,7 @@ class VillanosTableViewController: UIViewController{
     private var villanos = Villanos()
     private let villanosRepository = VillanoRepository()
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        self.villanos.removeAll()
-        DispatchQueue.main.async {
-                self.tableView?.reloadData()
-            }
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +26,17 @@ class VillanosTableViewController: UIViewController{
 
         }
     
-  /*  private func navigatetoDetail(villano: Villano) {
+    private func navigatetoDetail(villano: Villano) {
         //Pillamos en 1 variable el storyboard de "Detail"
-        let storyboard = UIStoryboard(name: "Detail",
+        let storyboard = UIStoryboard(name: "VillanoDetail",
                                       bundle: nil)
         //A destination le pasamos el viewcontroller inicial del storyboard que hemos sacado arriba y se lo pasamos al push para tener una navegación que nos permita volver atrás, pero tenemos que hacer que sea del tipo del viewcontroller que lo controla, as ahí el as? DetailViewController. Al ponerlo opcional hacemos ke si no es del tipo elegido, en vez de explotar simplemente devuelve un nil y no se chapa la app. Gracias a que es del tipo que queremos podemos acceder a sus propiedades y asignar a la variable héroe el valor del héroe que estamos seleccionando en el main.
-        if let destination = storyboard.instantiateInitialViewController() as? DetailViewController {
-            destination.heroe = heroe
+        if let destination = storyboard.instantiateInitialViewController() as? VillanoViewController {
+            destination.villano = villano
             navigationController?.pushViewController(destination,
                                                      animated: true)
         }
-    }*/
+    }
 }
 
 extension VillanosTableViewController: UITableViewDataSource {
@@ -73,14 +66,13 @@ extension VillanosTableViewController: UITableViewDataSource {
 
  extension VillanosTableViewController: UITableViewDelegate {
     
-    /*func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if villanos.count > indexPath.row {
             let selectedVillano = villanos[indexPath.row]
-           print("dddffg")
             
-           // navigatetoDetail(heroe: selectedVillano)
+            navigatetoDetail(villano: selectedVillano)
             
         }
-    }*/
+    }
     
 }

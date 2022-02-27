@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2423EC4227A6E2F30061DF25 /* VillanoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2423EC4127A6E2F30061DF25 /* VillanoDetail.storyboard */; };
+		2423EC4627A6EA070061DF25 /* VillanoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2423EC4527A6EA070061DF25 /* VillanoDetailViewController.swift */; };
 		24F2DF6B275804BB00BE3247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2DF6A275804BB00BE3247 /* AppDelegate.swift */; };
 		24F2DF6D275804BB00BE3247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2DF6C275804BB00BE3247 /* SceneDelegate.swift */; };
 		24F2DF72275804BB00BE3247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F2DF70275804BB00BE3247 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2423EC4127A6E2F30061DF25 /* VillanoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VillanoDetail.storyboard; sourceTree = "<group>"; };
+		2423EC4527A6EA070061DF25 /* VillanoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillanoDetailViewController.swift; sourceTree = "<group>"; };
 		24F2DF67275804BB00BE3247 /* Avengers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avengers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F2DF6A275804BB00BE3247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24F2DF6C275804BB00BE3247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2423EC4027A6E07B0061DF25 /* VillanoDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				2423EC4127A6E2F30061DF25 /* VillanoDetail.storyboard */,
+				2423EC4527A6EA070061DF25 /* VillanoDetailViewController.swift */,
+			);
+			path = VillanoDetailView;
+			sourceTree = "<group>";
+		};
 		24F2DF5E275804BB00BE3247 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 				24F2DF86275807EC00BE3247 /* MainView */,
 				24F2DF85275807DE00BE3247 /* SplashView */,
 				24F2DF84275807D300BE3247 /* DetailView */,
+				2423EC4027A6E07B0061DF25 /* VillanoDetailView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -247,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24F2DF77275804BC00BE3247 /* LaunchScreen.storyboard in Resources */,
+				2423EC4227A6E2F30061DF25 /* VillanoDetail.storyboard in Resources */,
 				24F2DF74275804BC00BE3247 /* Assets.xcassets in Resources */,
 				24F2DF72275804BB00BE3247 /* Main.storyboard in Resources */,
 				24F2DF9A27628D5500BE3247 /* Detail.storyboard in Resources */,
@@ -261,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2423EC4627A6EA070061DF25 /* VillanoDetailViewController.swift in Sources */,
 				24F2DF93275A37AB00BE3247 /* Heroe.swift in Sources */,
 				24F2DF96275FEDBB00BE3247 /* HeroeTableViewCell.swift in Sources */,
 				24F2DF8F275A36EF00BE3247 /* HeroeRepository.swift in Sources */,
@@ -421,6 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37479BS767;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Avengers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -448,6 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37479BS767;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Avengers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

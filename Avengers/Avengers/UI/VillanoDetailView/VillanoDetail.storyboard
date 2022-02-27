@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Villano View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="VillanoViewController" customModule="Avengers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venom" translatesAutoresizingMaskIntoConstraints="NO" id="gPM-R2-IvT">
+                                <rect key="frame" x="85" y="60" width="244" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gPM-R2-IvT" secondAttribute="height" multiplier="40:21" id="6px-ll-UC1"/>
+                                    <constraint firstAttribute="height" constant="128" id="CFC-u0-UJJ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="i7U-qh-kzR">
+                                <rect key="frame" x="20" y="252" width="374" height="181.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhq-L6-d8T">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extraterrestre con forma amorfa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rar-k4-qun">
+                                        <rect key="frame" x="0.0" y="80.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejora biológica del huésped" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foC-0a-3Mz">
+                                        <rect key="frame" x="0.0" y="161" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gPM-R2-IvT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="I6R-JB-0aD"/>
+                            <constraint firstItem="i7U-qh-kzR" firstAttribute="centerX" secondItem="gPM-R2-IvT" secondAttribute="centerX" id="Kka-sW-nxq"/>
+                            <constraint firstItem="gPM-R2-IvT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="OCU-Sl-gSo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="i7U-qh-kzR" secondAttribute="trailing" constant="20" id="TEZ-3r-bWo"/>
+                            <constraint firstItem="i7U-qh-kzR" firstAttribute="top" secondItem="gPM-R2-IvT" secondAttribute="bottom" constant="64" id="W9G-Xb-L6T"/>
+                            <constraint firstItem="i7U-qh-kzR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="vwf-sN-pDw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="villanoDescription" destination="Rar-k4-qun" id="B9t-zW-T7g"/>
+                        <outlet property="villanoImage" destination="gPM-R2-IvT" id="ujM-To-dZp"/>
+                        <outlet property="villanoName" destination="uhq-L6-d8T" id="gCe-7I-0WG"/>
+                        <outlet property="villanoSkills" destination="foC-0a-3Mz" id="qv1-pP-rjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="venom" width="156.33332824707031" height="277.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

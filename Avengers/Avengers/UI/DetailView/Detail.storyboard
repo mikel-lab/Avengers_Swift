@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,30 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="storm" translatesAutoresizingMaskIntoConstraints="NO" id="PNN-F3-5nq">
-                                <rect key="frame" x="93" y="60" width="240" height="126"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storm" translatesAutoresizingMaskIntoConstraints="NO" id="PNN-F3-5nq">
+                                <rect key="frame" x="165" y="60" width="84" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="126" id="Bu4-DZ-Fq5"/>
                                     <constraint firstAttribute="width" secondItem="PNN-F3-5nq" secondAttribute="height" multiplier="2:3" id="KYj-hJ-wsJ"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="jRs-5g-Umy">
-                                <rect key="frame" x="94" y="213" width="228" height="181.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="jRs-5g-Umy">
+                                <rect key="frame" x="20" y="213" width="374" height="181.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tormenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bD-3U-Y5A">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mutante de la Patrulla X" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEL-qv-5SL">
-                                        <rect key="frame" x="0.0" y="80.5" width="228" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="80.5" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Control del clima y la atmósfera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmD-qm-xSW">
-                                        <rect key="frame" x="0.0" y="161" width="228" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="161" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -52,7 +52,9 @@
                         <constraints>
                             <constraint firstItem="PNN-F3-5nq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="5ku-Zq-zYb"/>
                             <constraint firstItem="jRs-5g-Umy" firstAttribute="top" secondItem="PNN-F3-5nq" secondAttribute="bottom" constant="27" id="CGT-XS-nnw"/>
-                            <constraint firstItem="jRs-5g-Umy" firstAttribute="centerX" secondItem="PNN-F3-5nq" secondAttribute="centerX" id="WR5-dp-c8Z"/>
+                            <constraint firstItem="PNN-F3-5nq" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="HzU-08-hHD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jRs-5g-Umy" secondAttribute="trailing" constant="20" id="UK1-Hc-HyN"/>
+                            <constraint firstItem="jRs-5g-Umy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xRu-Tu-49D"/>
                         </constraints>
                     </view>
                     <connections>
